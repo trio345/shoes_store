@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoes_store/presentations/themes/app_color.dart';
 import 'package:shoes_store/utilities/constants/size_constant.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -34,6 +35,9 @@ class CustomBottomNavBar extends StatelessWidget {
             child: Image.asset(
               'assets/icons/home.png',
               width: Sizes.dimen_30,
+              color: selectedIndex == 0
+                  ? AppColor.orangeColor
+                  : AppColor.greyColor,
             ),
           ),
         ),
@@ -56,6 +60,9 @@ class CustomBottomNavBar extends StatelessWidget {
             child: Image.asset(
               'assets/icons/discount.png',
               width: Sizes.dimen_30,
+              color: selectedIndex == 1
+                  ? AppColor.orangeColor
+                  : AppColor.greyColor,
             ),
           ),
         ),
@@ -78,6 +85,9 @@ class CustomBottomNavBar extends StatelessWidget {
             child: Image.asset(
               'assets/icons/buy.png',
               width: Sizes.dimen_30,
+              color: selectedIndex == 2
+                  ? AppColor.orangeColor
+                  : AppColor.greyColor,
             ),
           ),
         ),
@@ -100,6 +110,9 @@ class CustomBottomNavBar extends StatelessWidget {
             child: Image.asset(
               'assets/icons/profile.png',
               width: Sizes.dimen_30,
+              color: selectedIndex == 3
+                  ? AppColor.orangeColor
+                  : AppColor.greyColor,
             ),
           ),
         ),
